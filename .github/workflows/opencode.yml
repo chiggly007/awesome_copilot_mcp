@@ -22,6 +22,6 @@ jobs:
       - name: Run opencode
         uses: sst/opencode/github@latest
         env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         with:
-          model: github-copilot/gpt-4.1
+          model: openai/gpt-4.1
